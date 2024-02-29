@@ -1,0 +1,339 @@
+*:focus {
+    outline: none;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.corpo {
+    box-sizing: border-box;
+    background-color: #eff2f5;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.logo-alura {
+    margin: 5.21% 5.21% 0 5.21% ;
+}
+
+
+.area-interacao {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    width: 100vw;
+
+}
+
+
+.area__interacao__texto-input {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 12% 0 5.21% 0;
+}
+
+
+.area-texto
+ {
+    resize: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    height: 60vh;
+    width: 50vw;
+    color: #0A3871;
+    border-style: none;
+    border-color: Transparent;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0)
+}
+
+
+.mensagem-aviso {
+    display: flex;
+    gap: 8px;
+}
+
+
+.mensagem-aviso__texto {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #495057;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+
+.mensagem-aviso__exclamacao {
+    width: 16px;
+    height: 16px;
+}
+
+.area__interacao__texto-input__botoes {
+    display: flex;
+    gap: 24px;
+    width: 50vw;
+}
+
+.interacao-botoes__encript {
+    display: flex;
+    justify-content: center;
+    border: 0;
+    background: #0A3871;
+    color: #ffffff;
+    width: 80%;
+    height: 100%;
+    text-align: center;
+    border-radius: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 24px 0;
+}
+
+
+.interacao-botoes__decript {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    background: #D8DFE8;
+    width: 80%;
+    height: 100%;
+    text-align: center;
+    border-radius: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 24px 0;
+}
+
+.area__interacao__texto-output {
+    border-radius: 32px;
+    margin: 3% 0 0 0 ;
+    height: 88%;
+    width: 30%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0px 24px 32px -8px #00000014;
+}
+
+
+.area__interacao__texto-output__imagem {
+    padding: 0 32px 32px 32px;
+    width: 100%;
+}
+
+.area__interacao__texto-output__mensagem__titulo {
+    font-family: 'Inter', sans-serif;
+    color: #343A40;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0rem;
+    text-align: center;
+    padding: 0px 28px 16px 28px;
+
+}
+
+.area__interacao__texto-output__mensagem__paragrafo {
+    font-family: 'Inter', sans-serif;
+    color: #495057;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding: 0 28px 0 28px;
+
+}
+
+.texto__resultado {
+
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #495057;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 32px;
+    overflow-y: scroll;
+    height: 85%;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+    hyphens: auto;
+   
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+.area__interacao__texto-output__botoes {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin: 24px;
+}
+
+.area__interacao__texto-output__botoes__limpar-colar {
+    display: flex;
+    justify-content: center;
+    border: 0;
+    background: #0A3871;
+    color: #ffffff;
+    width: 38%;
+    height: 100%;
+    text-align: center;
+    border-radius: 18px;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 15px 0;
+}
+
+.rodape{
+    color: #ffffff;
+    background-color: #0A3871;
+    padding: 24px 0;
+    text-align: center;
+    font-family: 'Inter', sans-serif;;
+    font-size: 1rem;
+    font-weight: 400;
+    position: absolute;
+    width: 100vw;
+    top: 100%;
+    text-align: center;
+    padding: 20px 0;
+
+}
+
+
+.interacao-botoes__encript:hover {
+    opacity: 0.8;
+}
+
+
+.interacao-botoes__decript:hover {
+    background: #0A3871;
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+.area__interacao__texto-output__botoes__limpar-colar:hover {
+    opacity: 0.8;
+
+}
+/* -----------------------------------/ RESPONSIVIDADE / RESOLUCAO DE TELA /---------------------------------------------  */
+
+@media screen and (max-width: 950px) {
+
+    .area__interacao__texto-output__imagem {
+        display: none;
+    }
+
+    .area-interacao{
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100vh;
+    }
+
+    .corpo {
+
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .area-texto
+     {
+        width: 90vw;
+        height: 40vh;
+        font-size: 1.5rem;
+    }
+
+
+    .area__interacao__texto-input__botoes {
+        width: 100%;
+    }
+    .area__interacao__texto-output {
+        width: 90vw;
+        height: 32vh;
+        margin:  10px 40px 40px ;
+    }
+
+    .area__interacao__texto-input {
+        margin: 0 40px 0 40px;
+        height: 35vh;
+    }
+
+    .logo-alura {
+        margin: 73.42px 0 100px 40px;
+
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+
+
+    .area__interacao__texto-input__botoes {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .area-texto
+     {
+        height: 35vh;
+    }
+
+    .logo-alura {
+        margin: 30px 0 45px 16px;
+    }
+
+    .area__interacao__texto-output {
+        margin: 20px 16px 16px 16px;
+        width: 91.5vw;
+    }
+
+    .area__interacao__texto-input {
+        margin: 0 16px 0 16px;
+        height: 45vh;
+    }
+
+
+    .interacao-botoes__decript {
+        width: 100%;
+    }
+
+    .interacao-botoes__encript {
+        width: 100%;
+    }
+
+    .area-texto
+     {
+        width: 100%;
+    }
+
+    .area__interacao__texto-output__mensagem__paragrafo {
+        font-size: 0.8rem;
+    }
+
+    .area__interacao__texto-output__mensagem__titulo {
+        font-size: 1rem;
+    }
+
+}
